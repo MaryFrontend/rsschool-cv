@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-photo">
+            <figure>
+                <img src="img/myPhoto.jpg" alt="myPhoto Maria Chepelava" class="myPhoto">
+            </figure>
+        </div>
+        <div class="header-name">
+            <h1>Chepelava Maria</h1>
+            <h2>Frontend Developer</h2>
+            <div class="html-animation">HTML</div>
+            <div class="css-animation">CSS</div>
+            <div class="js-animation">JavaScript</div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>About me</h2>
+            <p>
+                I work efficiently both as an individual as well as in a team. I seek new challenges and try to think in original ways while looking for creative solutions to a given problem. I am a quick learner. 
+            </p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5,Pug</li>
+                <li>CSS3,SCSS,Sass</li>
+                <li>JavaScript</li>
+                <li>Webpack</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section>
+            
+            <h2>Code example</h2>
+            <h3>Palindrome Strings</h3>
+            <pre>    
+                <code>
+                    function isPalindrome(line) {
+                        
+                        let reverse = line.toString().split("").reverse().join("");
+
+                        return reverse !== line.toString() ? false : true;
+                    };
+                </code>
+            </pre>
+            <h3>Anagram Detection</h3>
+            <pre>
+                <code class="code">
+                    var isAnagram = function(test, original) {
+                        
+                        let newTest = test.toLowerCase().split('').sort().join('');
+
+                        let newOriginal = original.toLowerCase().split('').sort().join('');
+                        
+                        if (newTest == newOriginal) {
+                          return true;
+                        } else{
+                          return false;
+                        }
+                    };
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Personal qualities</h2>
+            <ul>
+                <li>Time management</li>
+                <li>Accountability</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><span>Vitebsk State Order of Peoples' Friendship Medical University, </span>General Medicine Faculty (2014-2020)</li>
+                <li><span>Belarusian State University of Informatics and Radioelectronics, </span>Information systems software (2021-2023)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Courses</h2>
+            <ul>
+                <li><span>Udemy: </span> The Complete JavaScript Course of Ivan Petrychenko</li>
+                <li><span>Belhard: </span> Basics of web-applications development</li>
+                    
+            </ul>
+        </section>
+        <section>
+            <h2>Languages</h2>
+                <ul>
+                    <li><b>English:</b> B1 - Intermediate</li>
+                    <li><b>Russian:</b> native speaker</li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacts:</h2>
+        <ul>
+            <li><b>Telegram:</b> @mary_front</li>
+            <li><b>Email:</b> 4rontend@gmail.com</li>
+            <li><b>My Github: </b><a href="https://github.com/MaryFrontend">MaryFrontend</a></li>
+        </ul>
+            <a href="https://rs.school/js/">
+                <img src="img/rs_school_js.svg" alt="RSschool logotype" class="rs-logo">
+            </a>
+            <p class="app-created">
+                Application created in 2021
+            </p>
+        
+    </footer>
+</body>
+</html>
