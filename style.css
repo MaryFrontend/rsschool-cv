@@ -77,18 +77,10 @@ footer {
     }
   }
 
-  @-webkit-keyframes go-right-left {
-    from {
-      right: 0px;
-    }
-    to {
-      left: calc(100% - 10px);
-    }
-  }
 
   .js-animation {
     animation: go-left-right 3s infinite alternate;
-    -webkit-animation: go-left-right 5s infinite alternate;
+    -webkit-animation: go-left-right 4s infinite alternate;
     position: relative;
     border: 1px solid rgb(0, 0, 0);
     width:100px;
@@ -98,8 +90,8 @@ footer {
   }
 
   .html-animation {
-    animation: go-right-left 3s infinite alternate;
-    -webkit-animation: go-left-right 3s infinite alternate;
+    animation: go-left-right 3s infinite alternate;
+    -webkit-animation: go-left-right 3.5s infinite alternate;
     position: relative;
     border: 1px solid rgb(0, 0, 0);
     width:100px;
