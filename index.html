@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Chepelava Maria</h1>
-        <h2>Frontend Developer</h2>
-        <figure>
-            <img src="img/myPhoto.jpg" alt="myPhoto">
-        </figure>
+        <div class="header-photo">
+            <figure>
+                <img src="img/myPhoto.jpg" alt="myPhoto Maria Chepelava" class="myPhoto">
+            </figure>
+        </div>
+        <div class="header-name">
+            <h1>Chepelava Maria</h1>
+            <h2>Frontend Developer</h2>
+            <div class="html-animation">HTML</div>
+            <div class="css-animation">CSS</div>
+            <div class="js-animation">JavaScript</div>
+        </div>
     </header>
 
     <main>
@@ -33,9 +41,10 @@
             </ul>
         </section>
         <section>
+            
             <h2>Code example</h2>
-            <pre>
-                <h3>Palindrome Strings</h3>
+            <h3>Palindrome Strings</h3>
+            <pre>    
                 <code>
                     function isPalindrome(line) {
                         
@@ -45,9 +54,9 @@
                     };
                 </code>
             </pre>
+            <h3>Anagram Detection</h3>
             <pre>
-                <h3>Anagram Detection</h3>
-                <code>
+                <code class="code">
                     var isAnagram = function(test, original) {
                         
                         let newTest = test.toLowerCase().split('').sort().join('');
@@ -74,21 +83,16 @@
         <section>
             <h2>Education</h2>
             <ul>
-                <li>Vitebsk State Order of Peoples' Friendship Medical University</li>
-                    <p>General Medicine Faculty (2014-2020)</p>
-                <li>Belarusian State University of Informatics and Radioelectronics
-                    <p>Information systems software (2021-2023)</p>   
-                </li>
+                <li><span>Vitebsk State Order of Peoples' Friendship Medical University, </span>General Medicine Faculty (2014-2020)</li>
+                <li><span>Belarusian State University of Informatics and Radioelectronics, </span>Information systems software (2021-2023)</li>
             </ul>
         </section>
         <section>
             <h2>Courses</h2>
             <ul>
-                <li>Udemy</li>
-                    <p>The Complete JavaScript Course of Ivan Petrychenko</p>
-                <li>Belhard</li>
-                    <p>Modern Front-end using JavaScript and HTML5</p>
-                    <p>Basics of web-applications development</p>
+                <li><span>Udemy: </span> The Complete JavaScript Course of Ivan Petrychenko</li>
+                <li><span>Belhard: </span> Basics of web-applications development</li>
+                    
             </ul>
         </section>
         <section>
@@ -103,8 +107,17 @@
     <footer>
         <h2>Contacts:</h2>
         <ul>
-            <li>Telegram: @mary_front</li>
+            <li><b>Telegram:</b> @mary_front</li>
+            <li><b>Email:</b> 4rontend@gmail.com</li>
+            <li><b>My Github: </b><a href="https://github.com/MaryFrontend">MaryFrontend</a></li>
         </ul>
+            <a href="https://rs.school/js/">
+                <img src="img/rs_school_js.svg" alt="RSschool logotype" class="rs-logo">
+            </a>
+            <p class="app-created">
+                Application created in 2021
+            </p>
+        
     </footer>
 </body>
 </html>
