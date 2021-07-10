@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Chepelava Maria</h1>
-        <h2>Frontend Developer</h2>
-        <figure>
-            <img src="img/myPhoto.jpg" alt="myPhoto">
-        </figure>
+        <div class="header-photo">
+            <figure>
+                <img src="img/myPhoto.jpg" alt="myPhoto Maria Chepelava" class="myPhoto">
+            </figure>
+        </div>
+        <div class="header-name">
+            <h1>Chepelava Maria</h1>
+            <h2>Frontend Developer</h2>
+            <div class="html-animation">HTML</div>
+            <div class="css-animation">CSS</div>
+            <div class="js-animation">JavaScript</div>
+        </div>
     </header>
 
     <main>
@@ -47,7 +55,7 @@
             </pre>
             <pre>
                 <h3>Anagram Detection</h3>
-                <code>
+                <code class="code">
                     var isAnagram = function(test, original) {
                         
                         let newTest = test.toLowerCase().split('').sort().join('');
@@ -84,9 +92,9 @@
         <section>
             <h2>Courses</h2>
             <ul>
-                <li>Udemy</li>
+                <li><span>Udemy</span> </li>
                     <p>The Complete JavaScript Course of Ivan Petrychenko</p>
-                <li>Belhard</li>
+                <li><span>Belhard</span></li>
                     <p>Modern Front-end using JavaScript and HTML5</p>
                     <p>Basics of web-applications development</p>
             </ul>
@@ -103,8 +111,8 @@
     <footer>
         <h2>Contacts:</h2>
         <ul>
-            <li>Telegram: @mary_front</li>
-            <li>Email: 4rontend@gmail.com</li>
+            <li><b>Telegram:</b> @mary_front</li>
+            <li><b>Email:</b> 4rontend@gmail.com</li>
         </ul>
     </footer>
 </body>

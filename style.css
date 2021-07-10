@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+body {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #5d6a77;
+    font-size: 18px;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.myPhoto {
+    width: 200px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 46px;
+    font-family: 'Inconsolata', monospace;
+    color: #9bb9d2;
+}
+
+.header-name h2 {
+    color: #626575;
+}
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #5d6a77;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 26px;
+}
+
+pre {
+    max-width: 650px;
+    padding: 0 20px;
+    border: 1px solid #5d6a77;
+    font-size: 12px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    padding: 20px;
+}
+
+
+  @-webkit-keyframes go-left-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: calc(100% - 10px);
+    }
+  }
+
+  @-webkit-keyframes go-right-left {
+    from {
+      right: 0px;
+    }
+    to {
+      left: calc(100% - 10px);
+    }
+  }
+
+  .js-animation {
+    animation: go-left-right 3s infinite alternate;
+    -webkit-animation: go-left-right 5s infinite alternate;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    width:100px;
+    height: 20px;
+    background: rgb(255, 252, 92);
+    text-align: center;
+  }
+
+  .html-animation {
+    animation: go-right-left 3s infinite alternate;
+    -webkit-animation: go-left-right 3s infinite alternate;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    width:100px;
+    height: 20px;
+    background: rgb(255, 92, 127);
+    text-align: center;
+  }
+
+  .css-animation {
+    animation: go-left-right 3s infinite alternate;
+    -webkit-animation: go-left-right 3s infinite alternate;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    width:100px;
+    height: 20px;
+    margin: 10px 0;
+    background: rgb(56, 119, 255);
+    text-align: center;
+  }
